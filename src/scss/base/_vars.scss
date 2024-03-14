@@ -1,17 +1,33 @@
 :root {
-  --container-width: 1200px;
-  --container-padding: 15px;
+  --container-width: 1280px;
+  --container-padding: 16px;
 
-  --font-main: "Poppins", sans-serif;
-  --font-accent: "Playfair Display", serif;
+  --font-main: "Gilroy", sans-serif;
 
   --page-bg: #fff;
-  --text-color: #000;
-  --accent: #ac182c;
+  --time: 0.2s ease-in;
+  --primary-color: #1aa5b8;
+  --primary-color-hover: #188d9d;
+  --primary-color-active: #148291;
+  --footer-color: #1f222f;
+  --text-color-black: #0b1e21;
+  --text-color-white: #fff;
+  --text-color-disabled: #98a4a6;
+  --gray-20: #f5f5f5;
+  --gray-30: #ececec;
+  --gray-disabled: #f3f3f3;
 
-  --laptop-size: 1199px;
-  --tablet-size: 959px;
-  --mobile-size: 599px;
+  --activity-hover-bg: radial-gradient(
+    114.55% 90.34% at 100% 0%,
+    rgb(26, 165, 184),
+    rgb(245, 245, 245) 100%
+  );
+
+  --opacity-color-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-color-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-color-black-10: rgba(0, 0, 0, 0.1);
+  --opacity-color-black-30: rgba(0, 0, 0, 0.3);
+  --opacity-color-black-50: rgba(0, 0, 0, 0.5);
 }
 $vp-320: 320px;
 $vp-375: 375px;
@@ -21,7 +37,3 @@ $vp-1024: 1024px;
 $vp-1280: 1280px;
 $vp-1440: 1440px;
 $vp-1920: 1920px;
-.dark {
-  --page-bg: #252526;
-  --text-color: #fff;
-}

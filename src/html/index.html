@@ -1,15 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		@@include('blocks/footer.html')
-		<script src="./js/index.bundle.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/swiper.bundle.css" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <section class="section top_block">
+      <div class="container">
+        <div class="top_block__inner">
+          <div class="top_block__text">
+            <h1 class="color--white">
+              Цифровые <br />
+              решения <br />
+              в энергетике <br />
+              и промышленности
+            </h1>
+            <p class="text--24 color--white">
+              Исследуем - Разрабатываем - Внедряем - Поддерживаем
+            </p>
+            <div class="top_block__button button">
+              <a href="#">
+                <span>Скачать презентацию</span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.66699 6.66602L8.00033 9.99935L11.3337 6.66602"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 10V2"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top_block__image">
+        <img src="img/main-small/Main__000.png" alt="" />
+      </div>
+    </section>
+
+    <section class="section about_company">
+      <div class="container">
+        <h4 class="about_company__title">О компании</h4>
+        <p class="about_company__subtitle text--20">
+          Оптимизируем существующие бизнес-процессы, исследуем новые технологии,
+          разрабатываем и интегрируем ИТ-решения, способные преобразовать Ваш
+          бизнес.
+        </p>
+        <div class="about_company__stat">
+          <div class="about_company__stat-item">
+            <span>15 лет</span>
+            <p class="stat-item__text text--16">
+              опыт реализации российских и международных проектов
+            </p>
+          </div>
+          <div class="about_company__stat-item">
+            <span>50+</span>
+            <a href="#" class="link-underline text--16"
+              >реализованных проектов</a
+            >
+          </div>
+          <div class="about_company__stat-item">
+            <span>60+</span>
+            <p class="stat-item__text text--16">
+              сотрудников, обладающих бизнес-экспертизой в энергетической
+              отрасли
+            </p>
+          </div>
+        </div>
+        <div class="about_company__firms">
+          <div class="about_company__firms-item">
+            <div class="firms-item__img">
+              <img
+                src="img/items/logo-1.png"
+                width="210px"
+                height="38px"
+                alt=""
+              />
+            </div>
+            <div class="firms-item__info">
+              <h5>ОЭЗ «Иннополис»</h5>
+              <p class="text--16">
+                Резидент ОЭЗ “Иннополис” крупнейшей инновационной площадки РФ
+              </p>
+            </div>
+          </div>
+          <div class="about_company__firms-item">
+            <div class="firms-item__img">
+              <img src="img/items/logo-2.png" width="85px" height="149px" />
+            </div>
+            <div class="firms-item__info">
+              <h5>НТИ «Энерджинет»</h5>
+              <p class="text--16">
+                Участвует в разработке и реализации положений дорожной карты по
+                совершенствованию законодательства в энергетической отрасли
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activity">
+      <div class="container">
+        <h4>Сферы деятельности</h4>
+        <div class="activity__grid">
+          <div class="activity__grid-item">
+            <h5>Электроэнергетика</h5>
+          </div>
+          <div class="activity__grid-item">
+            <h5>Блокчейн технологии</h5>
+            <p class="text--16">
+              внедряем блокчейн технологию и смарт-контакты в продуктовые
+              решения (цифровой сбыт, реестры прав собственности и пр.)
+            </p>
+          </div>
+          <div class="activity__grid-item">
+            <h5>Цифровая трансформация</h5>
+          </div>
+          <div class="activity__grid-item">
+            <h5>Инновации (R&D)</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio">
+      <div class="container">
+        <div class="portfolio__inner">
+          <h4>Портфолио</h4>
+          <div class="portfolio__tabs tabs">
+            <div class="portfolio__tabs-tags tabs-tags">
+              <span class="tabs-tags__tag">2023</span>
+              <span class="tabs-tags__tag">2022</span>
+              <span class="tabs-tags__tag">2021</span>
+              <span class="tabs-tags__tag">2020</span>
+              <span class="tabs-tags__tag">2019</span>
+            </div>
+            <div class="tabs-content">
+              <div class="tabs-content__block">
+                <ul class="tabs-content__list">
+                  <li>
+                    <h6>АО «Янтарьэнергосбыт»</h6>
+                    <p class="text--18">
+                      Разработка и внедрение единой системы для функционирования
+                      розничного рынка электрической энергии на базе технологии
+                      блокчейн
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Киргизия</h6>
+                    <p class="text--18">
+                      Поставка электрозаправочных станций и системы управления
+                      ЭЗС
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Узбекистан</h6>
+                    <p class="text--18">
+                      Настройка личного кабинета, организация хранилища данных,
+                      отладка системы настройки процессов подачи заявки через
+                      личный кабинет
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs-content__block">
+                <ul class="tabs-content__list">
+                  <li>
+                    <h6>ООО «Энергоразвитие», Киргизия</h6>
+                    <p class="text--18">
+                      Поставка электрозаправочных станций и системы управления
+                      ЭЗС
+                    </p>
+                  </li>
+                  <li>
+                    <h6>АО «Янтарьэнергосбыт»</h6>
+                    <p class="text--18">
+                      Разработка и внедрение единой системы для функционирования
+                      розничного рынка электрической энергии на базе технологии
+                      блокчейн
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Узбекистан</h6>
+                    <p class="text--18">
+                      Настройка личного кабинета, организация хранилища данных,
+                      отладка системы настройки процессов подачи заявки через
+                      личный кабинет
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs-content__block">
+                <ul class="tabs-content__list">
+                  <li>
+                    <h6>АО «Янтарьэнергосбыт»</h6>
+                    <p class="text--18">
+                      Разработка и внедрение единой системы для функционирования
+                      розничного рынка электрической энергии на базе технологии
+                      блокчейн
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Киргизия</h6>
+                    <p class="text--18">
+                      Поставка электрозаправочных станций и системы управления
+                      ЭЗС
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Узбекистан</h6>
+                    <p class="text--18">
+                      Настройка личного кабинета, организация хранилища данных,
+                      отладка системы настройки процессов подачи заявки через
+                      личный кабинет
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs-content__block">
+                <ul class="tabs-content__list">
+                  <li>
+                    <h6>ООО «Энергоразвитие», Киргизия</h6>
+                    <p class="text--18">
+                      Поставка электрозаправочных станций и системы управления
+                      ЭЗС
+                    </p>
+                  </li>
+                  <li>
+                    <h6>АО «Янтарьэнергосбыт»</h6>
+                    <p class="text--18">
+                      Разработка и внедрение единой системы для функционирования
+                      розничного рынка электрической энергии на базе технологии
+                      блокчейн
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Узбекистан</h6>
+                    <p class="text--18">
+                      Настройка личного кабинета, организация хранилища данных,
+                      отладка системы настройки процессов подачи заявки через
+                      личный кабинет
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs-content__block">
+                <ul class="tabs-content__list">
+                  <li>
+                    <h6>АО «Янтарьэнергосбыт»</h6>
+                    <p class="text--18">
+                      Разработка и внедрение единой системы для функционирования
+                      розничного рынка электрической энергии на базе технологии
+                      блокчейн
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Киргизия</h6>
+                    <p class="text--18">
+                      Поставка электрозаправочных станций и системы управления
+                      ЭЗС
+                    </p>
+                  </li>
+                  <li>
+                    <h6>ООО «Энергоразвитие», Узбекистан</h6>
+                    <p class="text--18">
+                      Настройка личного кабинета, организация хранилища данных,
+                      отладка системы настройки процессов подачи заявки через
+                      личный кабинет
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section our_team">
+      <div class="container">
+        <h4>наша команда</h4>
+        <div class="our_team__tabs tabs">
+          <div class="our_team__tabs-tags tabs-tags">
+            <span class="tabs-tags__tag">Топ-менеджмент</span>
+            <span class="tabs-tags__tag">Руководители направлений</span>
+          </div>
+          <div class="our_team__tabs-content tabs-content">
+            <div class="tabs-content__block">
+              <div class="tabs-content__block-inner">
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/rustam.png" alt="" />
+                  </div>
+                  <h6 class="name">Рустам Габитов</h6>
+                  <p class="text--16">Финансы и организация</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/rustem.png" alt="" />
+                  </div>
+                  <h6 class="name">Рустем Хуснутдинов</h6>
+                  <p class="text--16">Производство</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/marat.png" alt="" />
+                  </div>
+                  <h6 class="name">Марат Муфлиханов</h6>
+                  <p class="text--16">Продажи и коммерция</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/diana.png" alt="" />
+                  </div>
+                  <h6 class="name">Диана Исламова</h6>
+                  <p class="text--16">Маркетинг и развитие</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-content__block">
+              <div class="tabs-content__block-inner">
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/rustem.png" alt="" />
+                  </div>
+                  <h6 class="name">Рустем Хуснутдинов</h6>
+                  <p class="text--16">Производство</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/rustam.png" alt="" />
+                  </div>
+                  <h6 class="name">Рустам Габитов</h6>
+                  <p class="text--16">Финансы и организация</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/marat.png" alt="" />
+                  </div>
+                  <h6 class="name">Марат Муфлиханов</h6>
+                  <p class="text--16">Продажи и коммерция</p>
+                </div>
+                <div class="tabs-content__block-person-card person-card">
+                  <div class="avatar">
+                    <img src="img/items/our_team/diana.png" alt="" />
+                  </div>
+                  <h6 class="name">Диана Исламова</h6>
+                  <p class="text--16">Маркетинг и развитие</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-block">
+      <div class="container">
+        <h4>Нам доверяют</h4>
+        <div class="trust-block__tabs tabs">
+          <div class="trust-block__tabs-tags tabs-tags">
+            <span class="tabs-tags__tag">Клиенты</span>
+            <span class="tabs-tags__tag">партнеры</span>
+          </div>
+          <div class="trust-block__tabs-content tabs-content">
+            <div class="tabs-content__block">
+              <div class="tabs-content__block-inner">
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rossety.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rosgidro.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rosenergoatom.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/inderrao.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/gtlk.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/atomenergosbit.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/np_sovet_rinka.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img
+                    src="img/items/trust-block/setevaya_company.png"
+                    alt=""
+                  />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/tatenergosbit.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="tabs-content__block">
+              <div class="tabs-content__block-inner">
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rossety.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rosgidro.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/rosenergoatom.png" alt="" />
+                </div>
+
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/gtlk.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/inderrao.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/atomenergosbit.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/np_sovet_rinka.png" alt="" />
+                </div>
+                <div class="tabs-content__block-brand brand_block">
+                  <img src="img/items/trust-block/tatenergosbit.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('blocks/footer.html')
+    <script src="./js/swiper.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
