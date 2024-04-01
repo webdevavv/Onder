@@ -1,3 +1,14 @@
+const burgerMenu = document.getElementById("burger");
+const navbarMenu = document.getElementById("menu");
+const header = document.getElementById("header");
+
+// Responsive Navbar Toggle
+burgerMenu.addEventListener("click", function () {
+  navbarMenu.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+  header.classList.toggle("blur");
+});
+
 function TabsManager(el) {
   this.tabsContainers = document.querySelectorAll(el);
   this.init();
@@ -53,3 +64,96 @@ TabsManager.prototype.handleTabClick = function (clickedTab) {
 
 // Инициализация объекта TabsManager
 var tabsManager = new TabsManager(".tabs");
+
+// Слайдеры
+
+var swiper = new Swiper(".products__slider", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  watchSlidesProgress: true,
+  slideVisibleClass: "products__slider-slide-visible",
+  pagination: {
+    el: ".products__slider-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".products__slider-next",
+    prevEl: ".products__slider-prev",
+  },
+  breakpoints: {
+    320: { slidesPerView: 1.1, spaceBetween: 16 },
+    500: { slidesPerView: 2.1, spaceBetween: 16 },
+    768: { slidesPerView: 3, spaceBetween: 16 },
+    1124: { slidesPerView: 4, spaceBetween: 16 },
+  },
+});
+
+var swiper2 = new Swiper(".about_us__slider", {
+  slidesPerView: 1.4,
+  spaceBetween: 0,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: ".about_us__slider-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".about_us__slider-next",
+    prevEl: ".about_us__slider-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+      centeredSlides: false,
+      loop: false,
+    },
+    840: {
+      slidesPerView: 1.4,
+      spaceBetween: 16,
+      centeredSlides: false,
+      loop: false,
+    },
+    1150: {
+      slidesPerView: 1.4,
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: true,
+    },
+  },
+});
+
+var swiper3 = new Swiper(".our_team__slider", {
+  slidesPerView: 4,
+  spaceBetween: 56,
+  pagination: {
+    el: ".our_team__slider-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1.1, spaceBetween: 16 },
+    500: { slidesPerView: 2.1, spaceBetween: 16 },
+    768: { slidesPerView: 3, spaceBetween: 26 },
+    1024: { slidesPerView: 4, spaceBetween: 56 },
+    1280: { slidesPerView: 4, spaceBetween: 56 },
+  },
+});
+
+var swiper4 = new Swiper(".wonderlife__slider", {
+  slidesPerView: 4,
+  spaceBetween: 56,
+  loop: true,
+  pagination: {
+    el: ".wonderlife__slider-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1.4, spaceBetween: 16, centeredSlides: true },
+    430: { slidesPerView: 1.5, spaceBetween: 16, centeredSlides: true },
+    520: { slidesPerView: 2.6, spaceBetween: 26, centeredSlides: true },
+    768: { slidesPerView: 3.4, spaceBetween: 26, centeredSlides: true },
+    1024: { slidesPerView: 4, spaceBetween: 26, centeredSlides: false },
+  },
+});

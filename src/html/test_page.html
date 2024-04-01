@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+  @@include('blocks/head.html')
+  <body>
+    @@include('blocks/header.html')
+
+    <section class="section top_block">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="/index.html">Главная</a>
+          <span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <p class="text--14">Новости</p>
+        </div>
+        <div class="top_block__inner">
+          <div class="top_block__text">
+            <h1 class="color--white">
+              Цифровые <br />
+              решения <br />
+              в энергетике <br />
+              и промышленности
+            </h1>
+            <p class="text--24 color--white">
+              Исследуем - Разрабатываем - Внедряем - Поддерживаем
+            </p>
+            <div class="top_block__button button">
+              <a href="#">
+                <span>Скачать презентацию</span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.66699 6.66602L8.00033 9.99935L11.3337 6.66602"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 10V2"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top_block__image">
+        <img src="" alt="" id="foo" />
+      </div>
+    </section>
+
+    <button
+      data-target="services_test"
+      data-toggle="modal"
+      class="btn btn-default"
+    >
+      modal with [&times;] button
+    </button>
+    <button
+      data-target="services_test_2"
+      data-toggle="modal"
+      class="btn btn-default"
+    >
+      modal with [&times;] button
+    </button>
+
+    <section class="section about_company">
+      <div class="container">
+        <h4 class="about_company__title">О компании</h4>
+        <p class="about_company__subtitle text--20">
+          Оптимизируем существующие бизнес-процессы, исследуем новые технологии,
+          разрабатываем и интегрируем ИТ-решения, способные преобразовать Ваш
+          бизнес.
+        </p>
+        <div class="about_company__stat">
+          <div class="about_company__stat-item">
+            <span>15 лет</span>
+            <p class="stat-item__text text--16">
+              опыт реализации российских и международных проектов
+            </p>
+          </div>
+          <div class="about_company__stat-item">
+            <span>50+</span>
+            <a href="#" class="link-underline text--16"
+              >реализованных проектов</a
+            >
+          </div>
+          <div class="about_company__stat-item">
+            <span>60+</span>
+            <p class="stat-item__text text--16">
+              сотрудников, обладающих бизнес-экспертизой в энергетической
+              отрасли
+            </p>
+          </div>
+        </div>
+        <div class="about_company__firms">
+          <div class="about_company__firms-item">
+            <div class="firms-item__img">
+              <img
+                src="img/items/logo-1.png"
+                width="210px"
+                height="38px"
+                alt=""
+              />
+            </div>
+            <div class="firms-item__info">
+              <h5>ОЭЗ «Иннополис»</h5>
+              <p class="text--16">
+                Резидент ОЭЗ “Иннополис” крупнейшей инновационной площадки РФ
+              </p>
+            </div>
+          </div>
+          <div class="about_company__firms-item">
+            <div class="firms-item__img">
+              <img src="img/items/logo-2.png" width="85px" height="149px" />
+            </div>
+            <div class="firms-item__info">
+              <h5>НТИ «Энерджинет»</h5>
+              <p class="text--16">
+                Участвует в разработке и реализации положений дорожной карты по
+                совершенствованию законодательства в энергетической отрасли
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include("blocks/modals.html") @@include('blocks/footer.html')
+    <script src="./js/modals.js"></script>
+    <script>
+      const srcs = [
+        "../img/main-small/Main__000.png",
+        "../img/main-small/Main__001.png",
+        "../img/main-small/Main__002.png",
+        "../img/main-small/Main__003.png",
+        "../img/main-small/Main__004.png",
+        "../img/main-small/Main__005.png",
+        "../img/main-small/Main__006.png",
+        "../img/main-small/Main__007.png",
+        "../img/main-small/Main__008.png",
+        "../img/main-small/Main__009.png",
+        "../img/main-small/Main__010.png",
+        "../img/main-small/Main__011.png",
+        "../img/main-small/Main__012.png",
+        "../img/main-small/Main__013.png",
+        "../img/main-small/Main__014.png",
+        "../img/main-small/Main__015.png",
+        "../img/main-small/Main__016.png",
+        "../img/main-small/Main__017.png",
+        "../img/main-small/Main__018.png",
+        "../img/main-small/Main__019.png",
+        "../img/main-small/Main__020.png",
+        "../img/main-small/Main__021.png",
+        "../img/main-small/Main__022.png",
+        "../img/main-small/Main__023.png",
+        "../img/main-small/Main__024.png",
+        "../img/main-small/Main__025.png",
+        "../img/main-small/Main__026.png",
+        "../img/main-small/Main__027.png",
+        "../img/main-small/Main__028.png",
+        "../img/main-small/Main__029.png",
+        "../img/main-small/Main__030.png",
+        "../img/main-small/Main__031.png",
+        "../img/main-small/Main__032.png",
+        "../img/main-small/Main__033.png",
+        "../img/main-small/Main__034.png",
+        "../img/main-small/Main__035.png",
+        "../img/main-small/Main__036.png",
+        "../img/main-small/Main__037.png",
+        "../img/main-small/Main__038.png",
+        "../img/main-small/Main__039.png",
+        "../img/main-small/Main__040.png",
+        "../img/main-small/Main__041.png",
+        "../img/main-small/Main__042.png",
+        "../img/main-small/Main__043.png",
+        "../img/main-small/Main__044.png",
+        "../img/main-small/Main__045.png",
+        "../img/main-small/Main__046.png",
+        "../img/main-small/Main__047.png",
+        "../img/main-small/Main__048.png",
+        "../img/main-small/Main__049.png",
+        "../img/main-small/Main__050.png",
+        "../img/main-small/Main__051.png",
+        "../img/main-small/Main__052.png",
+        "../img/main-small/Main__053.png",
+        "../img/main-small/Main__054.png",
+        "../img/main-small/Main__055.png",
+        "../img/main-small/Main__056.png",
+        "../img/main-small/Main__057.png",
+        "../img/main-small/Main__058.png",
+        "../img/main-small/Main__059.png",
+        "../img/main-small/Main__060.png",
+        "../img/main-small/Main__061.png",
+        "../img/main-small/Main__062.png",
+        "../img/main-small/Main__063.png",
+        "../img/main-small/Main__064.png",
+        "../img/main-small/Main__065.png",
+        "../img/main-small/Main__066.png",
+        "../img/main-small/Main__067.png",
+        "../img/main-small/Main__068.png",
+        "../img/main-small/Main__069.png",
+        "../img/main-small/Main__070.png",
+        "../img/main-small/Main__071.png",
+        "../img/main-small/Main__072.png",
+        "../img/main-small/Main__073.png",
+        "../img/main-small/Main__074.png",
+        "../img/main-small/Main__075.png",
+        "../img/main-small/Main__076.png",
+        "../img/main-small/Main__077.png",
+        "../img/main-small/Main__078.png",
+        "../img/main-small/Main__079.png",
+        "../img/main-small/Main__080.png",
+        "../img/main-small/Main__081.png",
+        "../img/main-small/Main__082.png",
+        "../img/main-small/Main__083.png",
+        "../img/main-small/Main__084.png",
+        "../img/main-small/Main__085.png",
+        "../img/main-small/Main__086.png",
+        "../img/main-small/Main__087.png",
+        "../img/main-small/Main__088.png",
+        "../img/main-small/Main__089.png",
+        "../img/main-small/Main__090.png",
+        "../img/main-small/Main__091.png",
+        "../img/main-small/Main__092.png",
+        "../img/main-small/Main__093.png",
+        "../img/main-small/Main__094.png",
+        "../img/main-small/Main__095.png",
+        "../img/main-small/Main__096.png",
+        "../img/main-small/Main__097.png",
+        "../img/main-small/Main__098.png",
+        "../img/main-small/Main__099.png",
+        "../img/main-small/Main__100.png",
+        "../img/main-small/Main__101.png",
+        "../img/main-small/Main__102.png",
+        "../img/main-small/Main__103.png",
+        "../img/main-small/Main__104.png",
+        "../img/main-small/Main__105.png",
+        "../img/main-small/Main__106.png",
+        "../img/main-small/Main__107.png",
+        "../img/main-small/Main__108.png",
+        "../img/main-small/Main__109.png",
+      ];
+    </script>
+    <script src="./js/sequence.js"></script>
+    @@include('blocks/scripts.html')
+  </body>
+</html>

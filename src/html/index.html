@@ -1,16 +1,9 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стартовый шаблон</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/swiper.bundle.css" />
-  </head>
+<html lang="ru">
+  @@include('blocks/head.html')
   <body>
     @@include('blocks/header.html')
-    <section class="section top_block">
+    <section class="section main_page-top_block top_block">
       <div class="container">
         <div class="top_block__inner">
           <div class="top_block__text">
@@ -62,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="top_block__image">
+      <div class="top_block__image" style="width: 75%">
         <img src="img/main-small/Main__000.png" alt="" />
       </div>
     </section>
@@ -134,20 +127,256 @@
         <h4>Сферы деятельности</h4>
         <div class="activity__grid">
           <div class="activity__grid-item">
-            <h5>Электроэнергетика</h5>
+            <div class="image-mob">
+              <img src="img/items/activity/1-mob.png" alt="" />
+            </div>
+            <div class="text">
+              <h5>Электроэнергетика</h5>
+              <p class="text--16">
+                Область в которой мы можем помочь Вам по любым вопросам
+                связанным с оптимизацией бизнес-процессов и цифровизацией
+                деятельности
+              </p>
+            </div>
           </div>
           <div class="activity__grid-item">
-            <h5>Блокчейн технологии</h5>
-            <p class="text--16">
-              внедряем блокчейн технологию и смарт-контакты в продуктовые
-              решения (цифровой сбыт, реестры прав собственности и пр.)
-            </p>
+            <div class="image-mob">
+              <img src="img/items/activity/2-mob.png" alt="" />
+            </div>
+            <div class="text">
+              <h5>Блокчейн технологии</h5>
+              <p class="text--16">
+                внедряем блокчейн технологию и смарт-контакты в продуктовые
+                решения (цифровой сбыт, реестры прав собственности и пр.)
+              </p>
+            </div>
           </div>
           <div class="activity__grid-item">
-            <h5>Цифровая трансформация</h5>
+            <div class="image-mob">
+              <img src="img/items/activity/3-mob.png" alt="" />
+            </div>
+            <div class="text">
+              <h5>Цифровая трансформация</h5>
+              <p class="text--16">
+                Внедряем цифровые технологии во все области бизнеса для
+                преобразования управленческих и производственных процессов
+                компании
+              </p>
+            </div>
           </div>
           <div class="activity__grid-item">
-            <h5>Инновации (R&D)</h5>
+            <div class="image-mob">
+              <img src="img/items/activity/4-mob.png" alt="" />
+            </div>
+            <div class="text">
+              <h5>Инновации (R&D)</h5>
+              <p class="text--16">
+                Исследуем то, как цифровые и финансовые технологии способны
+                сформировать новые бизнес-модели
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products">
+      <div class="container">
+        <h4>
+          <a href="#" class="title-link">Продукты и услуги</a>
+        </h4>
+      </div>
+      <div class="products__tabs tabs">
+        <div class="products__tabs-tags tabs-tags">
+          <div>
+            <span class="tabs-tags__tag">ИТ-продукты</span>
+            <span class="tabs-tags__tag">Технологический консалтинг</span>
+            <span class="tabs-tags__tag"
+              >Интеграция платформенных ИТ-решений</span
+            >
+            <span class="tabs-tags__tag">ИТ-разработка</span>
+          </div>
+          <div>
+            <span class="tabs-tags__tag"
+              >Инфраструктура для электромобилей</span
+            >
+            <span class="tabs-tags__tag">Зеленая энергетика</span>
+            <span class="tabs-tags__tag">Перспективные исследования</span>
+          </div>
+        </div>
+        <div class="products__tabs-content tabs-content">
+          <div class="tabs-content__block">
+            <div class="tabs-content__block-inner">
+              <div class="products-swiper-buttons swiper-buttons">
+                <div class="swiper-button-prev products__slider-prev"></div>
+                <div class="swiper-button-next products__slider-next"></div>
+              </div>
+              <div class="swiper products__slider">
+                <div class="swiper-wrapper">
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-top.png);
+                      background-position: top left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">01</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.GRID</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Цифровой сбыт - Платформа расчетов и платежей на
+                        розничном рынке электроэнергии и мощности на базе
+                        технологии блокчейн
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-top.png);
+                      background-position: top left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">02</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title">ONDER.DR</span>
+                      <p class="products-card__content-text text--16">
+                        Автоматизированный сервис ценозависимого управления
+                        спросом на электроэнергию
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/right-top.png);
+                      background-position: top right;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">03</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.REGISTRY</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Реестр прав собственности на электроэнергию, ценные
+                        бумаги, недвижимость на базе технологии блокчейн
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-bottom.png);
+                      background-position: bottom left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">04</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.CONTROL</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Автоматизированная система контроля строительных работ
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-top.png);
+                      background-position: top left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">03</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.REGISTRY</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Реестр прав собственности на электроэнергию, ценные
+                        бумаги, недвижимость на базе технологии блокчейн
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-bottom.png);
+                      background-position: bottom left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">04</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.CONTROL</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Автоматизированная система контроля строительных работ
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-bottom.png);
+                      background-position: bottom left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">04</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.CONTROL</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Автоматизированная система контроля строительных работ
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="products__slider-card products-card swiper-slide"
+                    style="
+                      background-image: url(img/items/products/left-bottom.png);
+                      background-position: bottom left;
+                      background-size: 55%;
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <div class="products-card__number">04</div>
+                    <div class="products-card__content">
+                      <span class="products-card__content-title"
+                        >ONDER.CONTROL</span
+                      >
+                      <p class="products-card__content-text text--16">
+                        Автоматизированная система контроля строительных работ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-pagination products__slider-pagination"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content__block">
+            <div class="tabs-content__block-inner"></div>
           </div>
         </div>
       </div>
@@ -307,77 +536,277 @@
       </div>
     </section>
 
+    <section class="section news_block">
+      <div class="container">
+        <h4>
+          <a href="#" class="title-link">новости</a>
+        </h4>
+        <div class="news_block__content">
+          <div
+            class="news_block__content-preview"
+            style="background-image: url(img/items/news_block.png)"
+          >
+            <a href="#">
+              <div class="news_block__content-preview-text">
+                <p class="content-preview-text__date text--12">
+                  22 декабря / 2023
+                </p>
+                <h5>
+                  Внедрение программного обеспечения для контроля за
+                  строительными работами
+                </h5>
+              </div>
+            </a>
+          </div>
+          <div class="news_block__content-items">
+            <ul class="news_block__content-items-list">
+              <li>
+                <a href="#">
+                  <p class="text--12">22 декабря / 2023</p>
+                  <p class="text--16">
+                    Внедрение программного обеспечения для контроля за
+                    строительными работами
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="text--12">20 декабря / 2023</p>
+                  <p class="text--16">
+                    Поставка лицензий на Автоматизированную систему
+                    ценозависимого управления спросом
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="text--12">19 декабря / 2023</p>
+                  <p class="text--16">
+                    Поставка лицензий на Автоматизированную систему
+                    ценозависимого управления спросом
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="text--12">18 декабря / 2023</p>
+                  <p class="text--16">
+                    Поставка лицензий на Систему управления процессами установки
+                    приборов учета
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="news_block__banner">
+          <div class="news_block__banner-text">
+            <h5>Подписывайтесь на наш Telergam канал</h5>
+            <p class="text--16">
+              Самые свежие новости мы публикуем в нашем телеграм канале,
+              заходите и будьте в курсе первыми
+            </p>
+          </div>
+          <div class="news_block__banner-button button">
+            <a href="#" class="text-button--13">подписаться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about_us">
+      <div class="container">
+        <div class="about_us__title-wrapper">
+          <h4>О нас говорят</h4>
+          <div class="about_us-swiper-buttons swiper-buttons">
+            <div class="swiper-button-prev about_us__slider-prev"></div>
+            <div class="swiper-button-next about_us__slider-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper about_us__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="about_us__person">
+              <div class="about_us__person-avatar">
+                <img src="img/about-us-person.png" alt="" />
+              </div>
+              <div class="about_us__person-info">
+                <h5>Марат Валиев</h5>
+                <p class="text--16">
+                  Первый заместитель директора по закупкам и продажам энергии и
+                  мощности АО «Татэнергосбыт»
+                </p>
+              </div>
+            </div>
+            <div class="about_us__text">
+              <p class="text--16">
+                «Сегодня нельзя говорить о развитии энергетической отрасли и
+                эффективных переменах без организации достоверного учета
+                потребления. Но и к самой организации такого учета нужно
+                подходить с умом. Мы понимали, что столь масштабная установка и
+                замена приборов учета, связанная с исполнением Федерального
+                закона №522-ФЗ, может повлечь высокие операционные расходы,
+                связанные со срывом сроков и некачественным выполнением работ.
+                Предвидя сложности, которые могут возникнуть, мы внедрили в
+                деятельность систему, разработанную компанией ONDER, для
+                планирования и контроля обслуживания точек учета электроэнергии,
+                минимизации рисков срыва сроков и некачественного выполнения
+                работ».
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about_us__person">
+              <div class="about_us__person-avatar">
+                <img src="img/about-us-person.png" alt="" />
+              </div>
+              <div class="about_us__person-info">
+                <h5>Марат Валиев</h5>
+                <p class="text--16">
+                  Первый заместитель директора по закупкам и продажам энергии и
+                  мощности АО «Татэнергосбыт»
+                </p>
+              </div>
+            </div>
+            <div class="about_us__text">
+              <p class="text--16">
+                «Сегодня нельзя говорить о развитии энергетической отрасли и
+                эффективных переменах без организации достоверного учета
+                потребления. Но и к самой организации такого учета нужно
+                подходить с умом. Мы понимали, что столь масштабная установка и
+                замена приборов учета, связанная с исполнением Федерального
+                закона №522-ФЗ, может повлечь высокие операционные расходы,
+                связанные со срывом сроков и некачественным выполнением работ.
+                Предвидя сложности, которые могут возникнуть, мы внедрили в
+                деятельность систему, разработанную компанией ONDER, для
+                планирования и контроля обслуживания точек учета электроэнергии,
+                минимизации рисков срыва сроков и некачественного выполнения
+                работ».
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about_us__person">
+              <div class="about_us__person-avatar">
+                <img src="img/about-us-person.png" alt="" />
+              </div>
+              <div class="about_us__person-info">
+                <h5>Марат Валиев</h5>
+                <p class="text--16">
+                  Первый заместитель директора по закупкам и продажам энергии и
+                  мощности АО «Татэнергосбыт»
+                </p>
+              </div>
+            </div>
+            <div class="about_us__text">
+              <p class="text--16">
+                «Сегодня нельзя говорить о развитии энергетической отрасли и
+                эффективных переменах без организации достоверного учета
+                потребления. Но и к самой организации такого учета нужно
+                подходить с умом. Мы понимали, что столь масштабная установка и
+                замена приборов учета, связанная с исполнением Федерального
+                закона №522-ФЗ, может повлечь высокие операционные расходы,
+                связанные со срывом сроков и некачественным выполнением работ.
+                Предвидя сложности, которые могут возникнуть, мы внедрили в
+                деятельность систему, разработанную компанией ONDER, для
+                планирования и контроля обслуживания точек учета электроэнергии,
+                минимизации рисков срыва сроков и некачественного выполнения
+                работ».
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination about_us__slider-pagination"></div>
+      </div>
+    </section>
+
     <section class="section our_team">
       <div class="container">
         <h4>наша команда</h4>
-        <div class="our_team__tabs tabs">
-          <div class="our_team__tabs-tags tabs-tags">
-            <span class="tabs-tags__tag">Топ-менеджмент</span>
-            <span class="tabs-tags__tag">Руководители направлений</span>
-          </div>
-          <div class="our_team__tabs-content tabs-content">
-            <div class="tabs-content__block">
-              <div class="tabs-content__block-inner">
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/rustam.png" alt="" />
+      </div>
+      <div class="our_team__tabs tabs">
+        <div class="our_team__tabs-tags tabs-tags">
+          <span class="tabs-tags__tag">Топ-менеджмент</span>
+          <span class="tabs-tags__tag">Руководители направлений</span>
+        </div>
+        <div class="our_team__tabs-content tabs-content">
+          <div class="tabs-content__block">
+            <div class="tabs-content__block-inner">
+              <div class="swiper our_team__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="tabs-content__block-person-card person-card">
+                      <div class="avatar">
+                        <img src="img/items/our_team/rustam.png" alt="" />
+                      </div>
+                      <h6 class="name">Рустам Габитов</h6>
+                      <p class="text--16">Финансы и организация</p>
+                    </div>
                   </div>
-                  <h6 class="name">Рустам Габитов</h6>
-                  <p class="text--16">Финансы и организация</p>
-                </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/rustem.png" alt="" />
+                  <div class="swiper-slide">
+                    <div class="tabs-content__block-person-card person-card">
+                      <div class="avatar">
+                        <img src="img/items/our_team/rustem.png" alt="" />
+                      </div>
+                      <h6 class="name">Рустем Хуснутдинов</h6>
+                      <p class="text--16">Производство</p>
+                    </div>
                   </div>
-                  <h6 class="name">Рустем Хуснутдинов</h6>
-                  <p class="text--16">Производство</p>
-                </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/marat.png" alt="" />
+                  <div class="swiper-slide">
+                    <div class="tabs-content__block-person-card person-card">
+                      <div class="avatar">
+                        <img src="img/items/our_team/marat.png" alt="" />
+                      </div>
+                      <h6 class="name">Марат Муфлиханов</h6>
+                      <p class="text--16">Продажи и коммерция</p>
+                    </div>
                   </div>
-                  <h6 class="name">Марат Муфлиханов</h6>
-                  <p class="text--16">Продажи и коммерция</p>
-                </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/diana.png" alt="" />
+                  <div class="swiper-slide">
+                    <div class="tabs-content__block-person-card person-card">
+                      <div class="avatar">
+                        <img src="img/items/our_team/diana.png" alt="" />
+                      </div>
+                      <h6 class="name">Диана Исламова</h6>
+                      <p class="text--16">Маркетинг и развитие</p>
+                    </div>
                   </div>
-                  <h6 class="name">Диана Исламова</h6>
-                  <p class="text--16">Маркетинг и развитие</p>
                 </div>
+                <div
+                  class="swiper-pagination our_team__slider-pagination"
+                ></div>
               </div>
             </div>
-            <div class="tabs-content__block">
-              <div class="tabs-content__block-inner">
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/rustem.png" alt="" />
-                  </div>
-                  <h6 class="name">Рустем Хуснутдинов</h6>
-                  <p class="text--16">Производство</p>
+          </div>
+          <div class="tabs-content__block">
+            <div class="tabs-content__block-inner">
+              <div class="tabs-content__block-person-card person-card">
+                <div class="avatar">
+                  <img src="img/items/our_team/rustem.png" alt="" />
                 </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/rustam.png" alt="" />
-                  </div>
-                  <h6 class="name">Рустам Габитов</h6>
-                  <p class="text--16">Финансы и организация</p>
+                <h6 class="name">Рустем Хуснутдинов</h6>
+                <p class="text--16">Производство</p>
+              </div>
+              <div class="tabs-content__block-person-card person-card">
+                <div class="avatar">
+                  <img src="img/items/our_team/rustam.png" alt="" />
                 </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/marat.png" alt="" />
-                  </div>
-                  <h6 class="name">Марат Муфлиханов</h6>
-                  <p class="text--16">Продажи и коммерция</p>
+                <h6 class="name">Рустам Габитов</h6>
+                <p class="text--16">Финансы и организация</p>
+              </div>
+              <div class="tabs-content__block-person-card person-card">
+                <div class="avatar">
+                  <img src="img/items/our_team/marat.png" alt="" />
                 </div>
-                <div class="tabs-content__block-person-card person-card">
-                  <div class="avatar">
-                    <img src="img/items/our_team/diana.png" alt="" />
-                  </div>
-                  <h6 class="name">Диана Исламова</h6>
-                  <p class="text--16">Маркетинг и развитие</p>
+                <h6 class="name">Марат Муфлиханов</h6>
+                <p class="text--16">Продажи и коммерция</p>
+              </div>
+              <div class="tabs-content__block-person-card person-card">
+                <div class="avatar">
+                  <img src="img/items/our_team/diana.png" alt="" />
                 </div>
+                <h6 class="name">Диана Исламова</h6>
+                <p class="text--16">Маркетинг и развитие</p>
               </div>
             </div>
           </div>
@@ -385,7 +814,7 @@
       </div>
     </section>
 
-    <section class="section trust-block">
+    <section class="section section-last trust-block">
       <div class="container">
         <h4>Нам доверяют</h4>
         <div class="trust-block__tabs tabs">
@@ -462,8 +891,6 @@
       </div>
     </section>
 
-    @@include('blocks/footer.html')
-    <script src="./js/swiper.js"></script>
-    <script src="./js/index.js"></script>
+    @@include('blocks/footer.html') @@include('blocks/scripts.html')
   </body>
 </html>

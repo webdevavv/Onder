@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./fonts/gilroy/fonts.css" />
+  <link rel="stylesheet" href="./css/swiper.bundle.css" />
+</head>
+
+  <body>
+    <header class="header" id="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbrand">
+        <div class="header__logo logo">
+          <a href="/index.html">
+            <svg
+              width="110"
+              height="26"
+              viewBox="0 0 110 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1088_1590)">
+                <path
+                  d="M32.0479 8.0225V25.2704H28.4307V0.544922L31.2241 0.580192L43.4367 17.9692V0.580192H47.0182V25.2704H44.153L32.0479 8.0225Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M50.9541 25.2721V0.617188H57.3098C65.5114 0.617188 69.6295 6.78973 69.6295 12.9623C69.6295 19.1348 65.5114 25.2721 57.3098 25.2721H50.9541ZM54.5712 4.17964V21.7097H57.3098C63.1114 21.7097 66.0483 17.336 66.0483 12.9623C66.0483 8.5886 63.1114 4.17964 57.3098 4.17964H54.5712Z"
+                  fill="white"
+                />
+                <path
+                  d="M76.5558 14.7259H87.909V11.1281H76.5558V4.17964H88.1596V0.617188H72.9033V25.2721H88.1958V21.7097H76.5558V14.7259Z"
+                  fill="white"
+                />
+                <path
+                  d="M105.309 25.2703L96.1764 14.4419V12.7488H100.402C103.446 12.7488 104.951 10.5972 104.951 8.4457C104.951 6.32937 103.446 4.17781 100.402 4.17781H94.8514V25.2703H91.2695V0.580078H100.402C105.846 0.580078 108.568 4.5305 108.568 8.4457C108.568 11.9376 106.383 15.2531 102.085 15.9938L110 25.2703H105.309Z"
+                  fill="white"
+                />
+                <path
+                  d="M10.4846 10.5886C11.4904 9.59799 12.9667 9.35301 14.2052 9.85373L13.3661 10.6801C12.6161 10.5341 11.8082 10.7474 11.227 11.3198C10.6457 11.8922 10.4292 12.6878 10.5775 13.4265L9.7385 14.2528C9.23006 13.0331 9.47875 11.5792 10.4846 10.5886Z"
+                  fill="#FC121B"
+                />
+                <path
+                  d="M9.7387 9.85364C11.1624 8.45147 13.3066 8.19139 14.9976 9.07327L14.6066 9.4583C13.1381 8.76771 11.3261 9.02133 10.1099 10.2192C8.89364 11.417 8.63614 13.2015 9.33739 14.6478L8.94639 15.0329C8.05089 13.3675 8.31501 11.2557 9.7387 9.85364Z"
+                  fill="#F85D1F"
+                />
+                <path
+                  d="M7.50481 7.65355C10.1686 5.03015 14.3109 4.75042 17.2899 6.81441L16.5344 7.55855C13.9777 5.89104 10.4996 6.16644 8.24725 8.38476C5.99482 10.603 5.71519 14.0285 7.40831 16.5465L6.65275 17.2906C4.55704 14.3567 4.84104 10.277 7.50481 7.65355Z"
+                  fill="#F4C52E"
+                />
+                <path
+                  d="M6.75887 6.92057C9.83556 3.89048 14.6454 3.60768 18.0455 6.07213L17.6697 6.44225C14.4789 4.17712 10.0012 4.45841 7.13006 7.28614C4.2589 10.1138 3.97329 14.5237 6.27325 17.6663L5.89742 18.0364C3.39509 14.6877 3.68224 9.95063 6.75887 6.92057Z"
+                  fill="#8AB65A"
+                />
+                <path
+                  d="M5.08034 5.26621C1.14618 9.14085 0.848189 15.3096 4.22201 19.6824L2.89615 20.9882C-1.23474 15.9984 -0.93913 8.63908 3.78298 3.98849C8.50506 -0.662145 15.9774 -0.953284 21.0439 3.11508L19.718 4.4209C15.2781 1.09812 9.0145 1.3916 5.08034 5.26621Z"
+                  fill="#1AA5B8"
+                />
+                <path
+                  d="M22.0277 21.9585C17.2707 26.6434 9.73875 27.0086 4.74121 22.8451L7.36175 20.2643C10.8604 22.9683 16.0531 22.7078 19.4208 19.391C22.7886 16.0742 23.0531 10.9602 20.3075 7.51444L22.928 4.93359C27.1554 9.85547 26.7847 17.2735 22.0277 21.9585Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1088_1590">
+                  <rect
+                    width="110"
+                    height="25.4737"
+                    fill="white"
+                    transform="translate(0 0.263672)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <div class="header__nav-links">
+            <a href="tel:+78432597555">+7 843 2597 555</a>
+          </div>
+        </div>
+        <div class="header__buttons header__buttons-mob">
+          <div class="link-button">
+            <a href="#">
+              <img src="img/icon/Telegram.svg" alt="" />
+            </a>
+          </div>
+          <div class="link-button link-button--lang">
+            <a href="#"> EN </a>
+          </div>
+        </div>
+        <div class="burger" id="burger">
+          <span class="burger-open">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12H21"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 6H21"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 18H21"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="burger-close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6L18 18"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="navbar__list menu" id="menu">
+        <ul class="header__nav-list">
+          <li class="active"><a href="/index.html">Главная</a></li>
+          <li><a href="/services.html">Продукты и услуги</a></li>
+          <li><a href="/career.html">Карьера</a></li>
+          <li><a href="/news_page.html">новости</a></li>
+          <li><a href="/accredit.html">Аккредитация ИТ</a></li>
+        </ul>
+        <div class="header__nav-links">
+          <a href="tel:+78432597555">+7 843 2597 555</a>
+          <span class="text--12">Email:</span>
+          <a href="mailto:hello@onder.tech">hello@onder.tech</a>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <div class="link-button">
+          <a href="#">
+            <img src="img/icon/Telegram.svg" alt="" />
+          </a>
+        </div>
+        <div class="link-button link-button--lang">
+          <a href="#"> EN </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <section class="section top_block">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="/index.html">Главная</a>
+          <span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <p class="text--14">Карьера</p>
+        </div>
+        <div class="top_block__inner">
+          <div>
+            <h1 class="color--white">
+              Карьера <br />
+              в Onder
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="top_block__image" style="width: 45%">
+        <img src="img/career-small/карьера_000.png" alt="" />
+      </div>
+    </section>
+
+    <section class="section career_page_info">
+      <div class="container">
+        <div class="career_page_info__inner">
+          <div class="career_page_info__text">
+            <h4>Работа в ONDER – это</h4>
+            <ul class="career_page_info__list list">
+              <li>Проекты в сфере IT, энергетики и консалтинга</li>
+              <li>Офис в центре города Казани</li>
+              <li>Гибкий график работы и возможность удаленной работы</li>
+              <li>Официальное трудоустройство и стабильная заработная плата</li>
+              <li>Ежегодный рост должностной позиции и заработной платы</li>
+              <li>Система обучения и наставничества</li>
+            </ul>
+          </div>
+          <div class="career_page_info__image">
+            <img src="img/career-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vacancies">
+      <div class="container">
+        <h4>вакансии компании</h4>
+        <div class="vacancies__grid">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <div class="text">
+                  <p class="text--12">18 декабря 2024 / казань</p>
+                  <h5>DevOps Engineer, Middle / Senior</h5>
+                </div>
+              </div>
+              <!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content text-block__wrapper">
+                  <div class="text-block">
+                    <h6>Задачи:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Ключевые навыки:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Требования:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vacancies__button button">
+                    <a href="#" class="text-button--13">подробнее о вакансии</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.accordion-item-body -->
+            </div>
+            <!-- /.accordion-item -->
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <div class="text">
+                  <p class="text--12">18 декабря 2024 / казань</p>
+                  <h5>DevOps Engineer, Middle / Senior</h5>
+                </div>
+              </div>
+              <!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content text-block__wrapper">
+                  <div class="text-block">
+                    <h6>Задачи:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Ключевые навыки:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Требования:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vacancies__button button">
+                    <a href="#" class="text-button--13">подробнее о вакансии</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.accordion-item-body -->
+            </div>
+            <!-- /.accordion-item -->
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <div class="text">
+                  <p class="text--12">18 декабря 2024 / казань</p>
+                  <h5>DevOps Engineer, Middle / Senior</h5>
+                </div>
+              </div>
+              <!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content text-block__wrapper">
+                  <div class="text-block">
+                    <h6>Задачи:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Ключевые навыки:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Требования:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vacancies__button button">
+                    <a href="#" class="text-button--13">подробнее о вакансии</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.accordion-item-body -->
+            </div>
+            <!-- /.accordion-item -->
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <div class="text">
+                  <p class="text--12">18 декабря 2024 / казань</p>
+                  <h5>DevOps Engineer, Middle / Senior</h5>
+                </div>
+              </div>
+              <!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content text-block__wrapper">
+                  <div class="text-block">
+                    <h6>Задачи:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Ключевые навыки:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Требования:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vacancies__button button">
+                    <a href="#" class="text-button--13">подробнее о вакансии</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.accordion-item-body -->
+            </div>
+            <!-- /.accordion-item -->
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <div class="text">
+                  <p class="text--12">18 декабря 2024 / казань</p>
+                  <h5>DevOps Engineer, Middle / Senior</h5>
+                </div>
+              </div>
+              <!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content text-block__wrapper">
+                  <div class="text-block">
+                    <h6>Задачи:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Ключевые навыки:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-block">
+                    <h6>Требования:</h6>
+                    <ul class="list">
+                      <li>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </li>
+                      <li>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                      <li>
+                        When an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vacancies__button button">
+                    <a href="#" class="text-button--13">подробнее о вакансии</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.accordion-item-body -->
+            </div>
+            <!-- /.accordion-item -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wonderlife">
+      <div class="container">
+        <h1 class="text-center mb-14">#wONDERlife</h1>
+        <p class="text--18 text-center wonderlife__subtitle">
+          У нас есть команда по баскетболу, мы участвуем в забегах и
+          поддерживаем инициативы сотрудников.
+        </p>
+        <div class="wonderlife__grid">
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/1.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/2.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/3.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/4.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/5.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/6.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/7.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/8.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/9.png" alt="" />
+          </div>
+          <div class="wonderlife__item">
+            <img src="img/items/wonderlife/10.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper wonderlife__slider">
+        <div class="swiper-wrapper">
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/1.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/2.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/3.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/4.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/5.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/6.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/7.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/8.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/9.png" alt="" />
+          </div>
+          <div class="wonderlife__item swiper-slide">
+            <img src="img/items/wonderlife/10.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination wonderlife__slider-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section career_form__wrapper">
+      <div class="container">
+        <div class="career_form">
+          <div class="career_form__text">
+            <h2>Нет нашли нужную вакансию?</h2>
+            <p class="text--18">
+              Напишите нам. Мы всегда ищем лучших специалистов!
+            </p>
+          </div>
+          <div class="career_form__fields">
+            <form>
+              <label for="fio">
+                <span class="name">фио</span>
+                <input type="text" id="fio" placeholder="Введите ФИО" />
+              </label>
+              <label for="tel">
+                <span class="name">Телефон</span>
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="+7 (___) ___ - __ - __"
+                />
+              </label>
+              <label for="mail">
+                <span class="name">E-mail</span>
+                <input type="mail" id="mail" placeholder="Введите email" />
+              </label>
+              <label for="city">
+                <span class="name">Город</span>
+                <input type="text" id="city" placeholder="Введите город" />
+              </label>
+              <label for="file" class="input-file">
+                <input type="file" name="" id="file" />
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_798_9790)">
+                      <path
+                        d="M14.2929 7.36726L8.16621 13.4939C7.41565 14.2445 6.39767 14.6662 5.33621 14.6662C4.27475 14.6662 3.25677 14.2445 2.50621 13.4939C1.75565 12.7434 1.33398 11.7254 1.33398 10.6639C1.33398 9.60248 1.75565 8.58449 2.50621 7.83393L8.63288 1.70726C9.13325 1.20689 9.81191 0.925781 10.5195 0.925781C11.2272 0.925781 11.9058 1.20689 12.4062 1.70726C12.9066 2.20764 13.1877 2.88629 13.1877 3.59393C13.1877 4.30157 12.9066 4.98022 12.4062 5.4806L6.27288 11.6073C6.02269 11.8575 5.68336 11.998 5.32954 11.998C4.97572 11.998 4.6364 11.8575 4.38621 11.6073C4.13602 11.3571 3.99547 11.0177 3.99547 10.6639C3.99547 10.3101 4.13602 9.97079 4.38621 9.7206L10.0462 4.06726"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_798_9790">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="text--14">Прикрепите резюме</p>
+                </span>
+              </label>
+              <input type="submit" value="Отправить" />
+              <p class="text--12">
+                Нажимая на кнопку «Отправить» Вы подтверждаете, что ознакомились
+                с <a href="#">Политикой конфиденциальности</a> и согласны на
+                обработку персональных данных
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__inner-info">
+        <div class="footer__logo-wrapper">
+          <div class="footer__logo logo">
+            <img src="img/icon/footer-logo.svg" alt="" />
+          </div>
+          <p class="text--16 color--white">
+            Разрабатываем и внедряем цифровые решения
+          </p>
+        </div>
+        <div class="footer__telegram-link">
+          <div class="link-button">
+            <a href="#">
+              <img src="img/icon/Telegram.svg" alt="" />
+            </a>
+          </div>
+          <p class="text--12">Еще больше в нашем телеграм канале</p>
+        </div>
+      </div>
+      <div class="footer__inner-list-wrapper footer__inner-list-services">
+        <span class="footer__inner-list-title">Услуги</span>
+        <ul class="footer__list">
+          <li><a href="#" class="text--14">ИТ-продукты</a></li>
+          <li><a href="#" class="text--14">Технологический консалтинг </a></li>
+          <li>
+            <a href="#" class="text--14">Интеграция платформенных ИТ-решений</a>
+          </li>
+          <li><a href="#" class="text--14">ИТ-разработка</a></li>
+          <li>
+            <a href="#" class="text--14">Инфраструктура для электромобилей</a>
+          </li>
+          <li><a href="#" class="text--14">Зеленая энергетика</a></li>
+          <li><a href="#" class="text--14">Перспективные исследования</a></li>
+        </ul>
+      </div>
+      <div class="footer__inner-list-wrapper">
+        <span class="footer__inner-list-title">компания</span>
+        <ul class="footer__list">
+          <li><a href="#" class="text--14">Главная</a></li>
+          <li><a href="#" class="text--14">Продукты и услуги </a></li>
+          <li><a href="#" class="text--14">Карьера</a></li>
+          <li><a href="#" class="text--14">Новости</a></li>
+          <li><a href="#" class="text--14">Аккредитация ИТ</a></li>
+        </ul>
+      </div>
+      <div class="footer__inner-list-wrapper">
+        <span class="footer__inner-list-title">контакты</span>
+        <ul class="footer__list">
+          <li>
+            <a href="tel:+78432597555" class="text--14">+7-843-2597-555</a>
+          </li>
+          <li><a href="#" class="text--14">hello@onder.tech</a></li>
+        </ul>
+      </div>
+      <div class="footer__telegram-link footer__telegram-link-hide">
+        <div class="link-button">
+          <a href="#">
+            <img src="img/icon/Telegram.svg" alt="" />
+          </a>
+        </div>
+        <p class="text--12">Еще больше в нашем телеграм канале</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="text--12">© 2023 «ONDER»</p>
+      <a href="#" class="text--12 link-underline"
+        >Политика конфиденциальности</a
+      >
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/accordions.js"></script>
+    <script src="./js/swiper.js"></script>
+<script src="./js/index.js"></script>
+
+  </body>
+</html>

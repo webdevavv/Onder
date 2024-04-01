@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  @@include('blocks/head.html')
+  <body>
+    @@include('blocks/header-light.html')
+    <section
+      class="section notfound-page"
+      style="background-image: url(img/items/404.png)"
+    >
+      <div class="container">
+        <div class="notfound-page__inner">
+          <div class="notfound-page__content">
+            <h1>
+              404. <br />
+              Такой страницы нет или больше не существует
+            </h1>
+            <p class="text--16">
+              Пожалуйста, воспользуйтесь меню сайта или начните с главной
+              страницы
+            </p>
+            <div class="button notfound-page__button">
+              <a class="text-button--13" href="/index.html">На главную</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include('blocks/footer.html') @@include('blocks/scripts.html')
+  </body>
+</html>
