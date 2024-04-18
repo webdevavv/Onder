@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   @@include('blocks/head.html')
   <body>
@@ -56,9 +56,14 @@
         </div>
       </div>
       <div class="top_block__image">
-        <!-- <img src="img/main-small/Main__000.png" alt="" /> -->
-        <video muted autoplay loop width="100%" height="100%">
-          <source src="img/main.MP4" />
+        <video muted autoplay loop class="video desc">
+          <source src="img/video/main.mp4" />
+        </video>
+        <video muted autoplay loop class="video table">
+          <source src="img/video/main-table.mp4" />
+        </video>
+        <video muted autoplay loop class="video mob">
+          <source src="img/video/main-mob.mp4" />
         </video>
       </div>
     </section>
@@ -225,6 +230,11 @@
                       background-repeat: no-repeat;
                     "
                   >
+                    <div
+                      class="modal-core"
+                      data-target="services_1"
+                      data-toggle="modal"
+                    ></div>
                     <div class="products-card__number">01</div>
                     <div class="products-card__content">
                       <span class="products-card__content-title"
@@ -549,6 +559,11 @@
             class="news_block__content-preview"
             style="background-image: url(img/items/news_block.png)"
           >
+            <div
+              class="modal-core"
+              data-target="news_1"
+              data-toggle="modal"
+            ></div>
             <a href="#">
               <div class="news_block__content-preview-text">
                 <p class="content-preview-text__date text--12">
@@ -564,6 +579,11 @@
           <div class="news_block__content-items">
             <ul class="news_block__content-items-list">
               <li>
+                <div
+                  class="modal-core"
+                  data-target="news_1"
+                  data-toggle="modal"
+                ></div>
                 <a href="#">
                   <p class="text--12">22 декабря / 2023</p>
                   <p class="text--16">
@@ -573,6 +593,11 @@
                 </a>
               </li>
               <li>
+                <div
+                  class="modal-core"
+                  data-target="news_1"
+                  data-toggle="modal"
+                ></div>
                 <a href="#">
                   <p class="text--12">20 декабря / 2023</p>
                   <p class="text--16">
@@ -582,6 +607,11 @@
                 </a>
               </li>
               <li>
+                <div
+                  class="modal-core"
+                  data-target="news_1"
+                  data-toggle="modal"
+                ></div>
                 <a href="#">
                   <p class="text--12">19 декабря / 2023</p>
                   <p class="text--16">
@@ -591,6 +621,11 @@
                 </a>
               </li>
               <li>
+                <div
+                  class="modal-core"
+                  data-target="news_1"
+                  data-toggle="modal"
+                ></div>
                 <a href="#">
                   <p class="text--12">18 декабря / 2023</p>
                   <p class="text--16">
@@ -894,6 +929,8 @@
       </div>
     </section>
 
-    @@include('blocks/footer.html') @@include('blocks/scripts.html')
+    @@include('blocks/footer.html') @@include('blocks/modals.html')
+    <script src="./js/modals.js"></script>
+    @@include('blocks/scripts.html')
   </body>
 </html>
