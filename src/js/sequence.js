@@ -1,29 +1,39 @@
-function loadImage(src) {
-  return new window.Promise((resolve, reject) => {
-    const $img = new window.Image();
-    $img.src = src;
-    if ($img.complete) resolve(src);
-    else
-      $img.onload = () => {
-        resolve(src);
-      };
-  });
+const totalFrames = 18;
+const animationDuration = 1300;
+const timePerFrame = animationDuration / totalFrames;
+let timeWhenLastUpdate;
+let timeFromLastUpdate;
+let frameNumber = 1;
+
+// 'step' function will be called each time browser rerender the content
+// we achieve that by passing 'step' as a parameter to 'requestAnimationFrame' function
+function step(startTime) {
+  // 'startTime' is provided by requestAnimationName function, and we can consider it as current time
+  // first of all we calculate how much time has passed from the last time when frame was update
+  if (!timeWhenLastUpdate) timeWhenLastUpdate = startTime;
+  timeFromLastUpdate = startTime - timeWhenLastUpdate;
+
+  // then we check if it is time to update the frame
+  if (timeFromLastUpdate > timePerFrame) {
+    // hide all frames
+    $(".eye-animation").css("opacity", 0);
+    // and show the required one
+    $(`.eye-animation-${frameNumber}`).css("opacity", 1);
+    // reset the last update time
+    timeWhenLastUpdate = startTime;
+
+    // then increase the frame number or reset it if it is the last frame
+    if (frameNumber >= totalFrames) {
+      frameNumber = 1;
+    } else {
+      frameNumber = frameNumber + 1;
+    }
+  }
+
+  requestAnimationFrame(step);
 }
 
-function loadImages(srcs) {
-  return window.Promise.all(srcs.map(loadImage));
-}
-
-loadImages(srcs).then((x) => {
-  window.foo.src = x[0];
-  window.requestAnimationFrame(update);
+// wait for images to be downloaded and start the animation
+$(window).on("load", () => {
+  requestAnimationFrame(step);
 });
-
-function seek($img, srcs, p) {
-  $img.src = srcs[Math.round((srcs.length - 1) * p)];
-}
-
-function update(t) {
-  seek(window.foo, srcs, (t / 2000) % 1);
-  window.requestAnimationFrame(update);
-}
